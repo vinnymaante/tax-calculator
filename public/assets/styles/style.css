@@ -1,0 +1,506 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --padding1: 1rem;
+  --padding2: 2rem;
+  --padding3: 3rem;
+  --margin1: 1rem;
+  --margin2: 2rem;
+  --margin3: 3rem;
+  --primary: rgb(3, 3, 26);
+  --secondary: rgb(248, 247, 247);
+}
+
+body,
+.banner {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  background-color: rgb(252, 252, 252);
+}
+
+header {
+  position: relative;
+  display: grid;
+  height: 100vh;
+  grid-template-columns: repeat(2, 1fr);
+}
+header .side1 {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .side1 img {
+  width: 400px;
+  padding: 4rem 0;
+}
+header .side2 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+header .side2 h2 {
+  font-size: 3.5rem;
+  padding: 2rem 0;
+}
+header .side2 p {
+  font-size: 1.5rem;
+  line-height: 2.1rem;
+  max-width: 80%;
+  padding-bottom: 1.3rem;
+}
+header .side2 p span {
+  font-weight: 600;
+  color: rgb(31, 41, 184);
+  transition: all 0.4s ease-in-out;
+  cursor: pointer;
+}
+header .side2 p span:hover {
+  border-bottom: 1px solid rgb(31, 41, 184);
+  transition: all 0.4s ease-in-out;
+}
+.side2 p {
+  color: blue;
+}
+.side2 h2 {
+  color: brown;
+}
+header .side2 input {
+  width: 200px;
+  height: 45px;
+  border-radius: 30px;
+  border: 1px solid rgb(3, 3, 26);
+  background: none;
+  transition: all 0.4s ease-in-out;
+  cursor: pointer;
+  font-size: 1.1rem;
+}
+header .side2 input:hover {
+  color: white;
+  background-color: rgb(3, 3, 26);
+  border: none;
+  transition: all 0.4s ease-in-out;
+}
+
+main {
+  position: relative;
+  width: 100%;
+  height: 95vh;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  background: rgb(250, 245, 245);
+}
+main .part1 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main .part1 form {
+  position: relative;
+  width: 80%;
+  background-color: rgb(176, 3, 176);
+  box-shadow: 1px 1px 20px rgba(3, 3, 26, 0.205);
+}
+main .part1 form .row {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 2.2rem 1rem;
+}
+main .part1 form .row .left-row {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-right: 2rem;
+}
+main .part1 form .row .left-row h5 {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+}
+main .part1 form .row .right-r {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+main .part1 form .row .right-r input[type="text"] {
+  width: 200px;
+  height: 40px;
+  border: 1.5px solid rgba(3, 3, 26, 0.356);
+  border-radius: 10px;
+  outline: none;
+  font-size: 1.2rem;
+  padding-left: 1rem;
+  color: rgba(0, 0, 0, 0.658);
+}
+main .part1 form .row .right-r label {
+  font-size: 1.2rem;
+  padding: 0 1rem;
+}
+main .part1 form .row .right-r label input[type="checkbox"] {
+  padding: 4rem;
+  font-size: 2rem;
+  border: 1px solid red;
+  padding: 2rem;
+}
+main .part1 form .row .right-r label input[type="checkbox"]:checked {
+  color: black;
+  background-color: rgb(3, 3, 26);
+}
+main .part1 form .calc-btn {
+  margin: 1.5rem;
+  width: 300px;
+  height: 50px;
+  cursor: pointer;
+  border: none;
+  background-color: blue;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: white;
+}
+
+main .part2 {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(201, 8, 8);
+}
+main .part2 form {
+  position: relative;
+  border: 2px solid rgba(3, 3, 26, 0.582);
+  width: 60%;
+}
+main .part2 form .row {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  border: 1px solid rgba(0, 0, 0, 0.075);
+  padding: 1rem 1rem;
+}
+main .part2 form .row .left-row {
+  padding-right: 2rem;
+}
+main .part2 form .row .left-row h5 {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  font-weight: normal;
+}
+main .part2 form .row .right-r {
+  text-align: center;
+}
+main .part2 form .row .right-r h6 {
+  font-size: 1.2rem;
+}
+main .part2 form .row .right-r h6 span {
+  padding-left: 1rem;
+}
+
+footer {
+  position: relative;
+  background-color: rgb(16, 16, 17);
+  height: 8vh;
+  margin-top: 420px;
+}
+footer h5 {
+  color: rgb(241, 239, 239);
+  text-align: end;
+  color: blue;
+  font-size: 18px;
+  padding: 1rem 0;
+  margin-right: 100px;
+}
+footer h5 span {
+  color: rgb(96, 104, 206);
+}
+
+@media screen and (max-width: 425px) {
+  body,
+  .banner {
+    min-height: 100%;
+  }
+
+  .info {
+    padding: 1.5rem;
+    width: 90%;
+    transform: translateX(5%);
+  }
+  .info p {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+  }
+  .info a {
+    padding-top: 0.6rem;
+    font-size: 1.1rem;
+  }
+  .info i {
+    top: 3.4rem;
+    font-size: 1.3rem;
+  }
+
+  header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  header .side1 {
+    display: none;
+  }
+  header .side2 {
+    align-items: center;
+  }
+  header .side2 p {
+    text-align: center;
+    font-size: 1.3rem;
+  }
+  header .side2 h2 {
+    font-size: 3rem;
+    text-align: center;
+  }
+  header input {
+    margin-top: 1.5rem;
+  }
+
+  main {
+    display: flex;
+    height: auto;
+    flex-direction: column;
+  }
+  main .part1 {
+    padding: 1rem 0;
+  }
+  main .part1 form {
+    width: 95%;
+    margin: 1rem 0;
+  }
+  main .part1 form .row {
+    padding: 0.5rem 0;
+  }
+  main .part1 form .row .left-row {
+    padding-right: 0;
+  }
+  main .part1 form .row .left-row h5 {
+    font-size: 0.8rem;
+  }
+  main .part1 form .row .right-r label {
+    font-size: 1rem;
+  }
+  main .part1 form .calc-btn {
+    width: 92% !important;
+    height: 50px;
+    margin: 1rem 0;
+    transform: translateX(0);
+  }
+  main .part2 form {
+    width: 95%;
+  }
+  main .part2 form .row {
+    padding: 0.6rem 0.6rem;
+  }
+  main .part2 form .row .left-row {
+    padding-right: 1.5rem;
+  }
+  main .part2 form .row .left-row h5 {
+    font-size: 1rem;
+  }
+  main .part2 form .row .right-r h6 {
+    font-size: 1rem;
+  }
+
+  footer {
+    display: flex;
+    justify-content: center;
+    height: 10vh;
+    align-items: center;
+    margin-top: 1rem;
+  }
+}
+@media screen and (max-width: 375px) {
+  body,
+  .banner {
+    min-height: 100%;
+  }
+
+  .info {
+    padding: 1.4rem;
+    width: 90%;
+    transform: translateX(5%);
+  }
+  .info p {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+  }
+  .info a {
+    padding-top: 0.6rem;
+    font-size: 1.1rem;
+  }
+  .info i {
+    top: 3.4rem;
+    right: 1.5rem;
+    font-size: 1.3rem;
+  }
+
+  header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  header .side1 {
+    display: none;
+  }
+  header .side2 {
+    align-items: center;
+  }
+  header .side2 p {
+    text-align: center;
+    font-size: 1.3rem;
+  }
+  header .side2 h2 {
+    font-size: 3rem;
+    text-align: center;
+  }
+  header input {
+    margin-top: 1.5rem;
+  }
+
+  main {
+    display: flex;
+    height: auto;
+    flex-direction: column;
+  }
+  main .part1 {
+    padding: 1rem 0;
+  }
+  main .part1 form {
+    width: 95%;
+    margin: 1rem 0;
+  }
+  main .part1 form .row {
+    padding: 0.5rem 0;
+  }
+  main .part1 form .row .left-row {
+    padding-right: 0;
+  }
+  main .part1 form .row .left-row h5 {
+    font-size: 0.8rem;
+    height: 5vh;
+  }
+  main .part1 form .row .right-r input[type="text"] {
+    width: 100%;
+  }
+  main .part1 form .calc-btn {
+    width: 90% !important;
+    height: 50px;
+    margin: 1rem 0;
+    transform: translateX(0);
+  }
+  main .part2 form {
+    width: 95%;
+  }
+  main .part2 form .row {
+    padding: 0.6rem 0.6rem;
+  }
+  main .part2 form .row .left-row {
+    padding-right: 1.5rem;
+  }
+  main .part2 form .row .left-row h5 {
+    font-size: 1rem;
+  }
+  main .part2 form .row .right-r h6 {
+    font-size: 1rem;
+  }
+
+  footer {
+    display: flex;
+    justify-content: center;
+    height: 10vh;
+    align-items: center;
+    margin-top: 1rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  body,
+  .banner {
+    min-height: 100%;
+  }
+
+  .info {
+    padding: 1.5rem;
+    width: 90%;
+    transform: translateX(5%);
+  }
+  .info p {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+  }
+  .info a {
+    padding-top: 0.6rem;
+    font-size: 1.2rem;
+  }
+  .info i {
+    top: 3rem;
+    font-size: 1.3rem;
+  }
+
+  header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  header .side1 {
+    display: none;
+  }
+  header .side2 {
+    align-items: center;
+  }
+  header .side2 p {
+    text-align: center;
+  }
+  header input {
+    margin-top: 1.5rem;
+  }
+
+  main {
+    display: flex;
+    height: auto;
+    flex-direction: column;
+  }
+  main .part1 {
+    padding: 1rem 0;
+    border: none;
+  }
+  main .part1 form {
+    width: 95%;
+    margin: 1rem 0;
+  }
+  main .part1 form .row {
+    padding: 1rem 1rem;
+  }
+  main .part1 form .row .left-row {
+    padding-right: 1rem;
+  }
+  main .part1 form .calc-btn {
+    width: 95%;
+    height: 60px;
+    margin: 1rem 1rem;
+    transform: translateX(0);
+  }
+  main .part2 form {
+    width: 95%;
+  }
+
+  footer {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    margin-top: 1rem;
+  }
+}

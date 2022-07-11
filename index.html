@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./public/assets/styles/style.css" />
+    <title>Tax Calculator</title>
+  </head>
+  <body>
+    <div class="banner">
+      <header>
+        <div class="side1">
+          <img
+            src="./public/assets/images/undraw_portfolio_feedback_6r17.svg"
+            alt="image"
+            width="200px"
+          />
+        </div>
+        <div class="side2">
+          <h2>Tax Calculator</h2>
+          <p>Tax Calculator to calculate income tax</p>
+        </div>
+      </header>
+      <main>
+        <div class="part1">
+          <form action="">
+            <div class="row">
+              <div class="left-row">
+                <h5>Pay period</h5>
+              </div>
+              <div class="right-r">
+                <label for="month"
+                  ><input type="checkbox" name="period" id="month" />
+                  Month</label
+                >
+                <label for="year"
+                  ><input type="checkbox" name="period" id="year" /> Year</label
+                >
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="left-row">
+                <h5>Basic Salary:</h5>
+              </div>
+              <div class="right-r">
+                <input
+                  type="text"
+                  name="salary"
+                  id="salary-input"
+                  placeholder="salary"
+                />
+              </div>
+              .
+            </div>
+
+            <div class="row">
+              <div class="left-row">
+                <h5>Benefits (Bonus,Allowance):</h5>
+              </div>
+              <div class="right-r">
+                <input
+                  type="text"
+                  name="salary"
+                  id="benefits-input"
+                  placeholder="Benefits & allowances"
+                />
+              </div>
+              .
+            </div>
+
+            <div class="row">
+              <div class="left-row">
+                <h5>Deduct NSSF:</h5>
+              </div>
+              <div class="right-r">
+                <label for="yes"
+                  ><input type="checkbox" name="nssf" id="yes-nssf" />
+                  Yes</label
+                >
+                <label for="no"
+                  ><input type="checkbox" name="nssf" id="no-nssf" /> No</label
+                >
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="left-row">
+                <h5>NSSF Rates:</h5>
+              </div>
+              <div class="right-r">
+                <label for="new">
+                  <input type="checkbox" name="rates" id="new-rates" /> NEW NSSF
+                  RATES (TIERED)</label
+                >
+                <label for="old"
+                  ><input type="checkbox" name="rates" id="old-rates" /> OLD
+                  NSSF RATES (KSH200)</label
+                >
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="left-row">
+                <h5>Deduct NHIF:</h5>
+              </div>
+              <div class="right-r">
+                <label for="yes"
+                  ><input type="checkbox" name="nhif" id="yes-nhif" />
+                  Yes</label
+                >
+                <label for="no"
+                  ><input type="checkbox" name="nhif" id="no-nhif" /> No</label
+                >
+              </div>
+            </div>
+
+            <input type="button" value="Calculate" class="calc-btn" />
+          </form>
+        </div>
+
+        <div class="part2">
+          <form action="">
+            <div class="row">
+              <div class="left-row">
+                <h5>Income before pension deduction</h5>
+              </div>
+              <div class="right-r">
+                <h6>KSH <span class="val1">00</span></h6>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="left-row">
+                <h5>Deductible NSSF pension contribution</h5>
+              </div>
+              <div class="right-r">
+                <h6>KSH <span class="val2">00</span></h6>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="left-row">
+                <h5>Income after pension deduction</h5>
+              </div>
+              <div class="right-r">
+                <h6>KSH <span class="val3">00</span></h6>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="left-row">
+                <h5>Benefits in Kind</h5>
+              </div>
+              <div class="right-r">
+                <h6>KSH <span class="val4">00</span></h6>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="left-row">
+                <h5>Taxable Income</h5>
+              </div>
+              <div class="right-r">
+                <h6>KSH <span class="val5">00</span></h6>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="left-row">
+                <h5>Tax on taxable income</h5>
+              </div>
+              <div class="right-r">
+                <h6>KSH <span class="val6">00</span></h6>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="left-row">
+                <h5>Personal relief</h5>
+              </div>
+              <div class="right-r">
+                <h6>KSH <span class="val7">00</span></h6>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="left-row">
+                <h5>Tax Net off relief</h5>
+              </div>
+              <div class="right-r">
+                <h6>KSH <span class="val8">00</span></h6>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="left-row">
+                <h5>Paye</h5>
+              </div>
+              <div class="right-r">
+                <h6>KSH <span class="val9">00</span></h6>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="left-row">
+                <h5>chargeable income</h5>
+              </div>
+              <div class="right-r">
+                <h6>KSH <span class="val10">00</span></h6>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="left-row">
+                <h5>Nhif contribution</h5>
+              </div>
+              <div class="right-r">
+                <h6>KSH <span class="val11">00</span></h6>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="left-row">
+                <h5>Net pay</h5>
+              </div>
+              <div class="right-r">
+                <h6>KSH <span class="val12">00</span></h6>
+              </div>
+            </div>
+          </form>
+        </div>
+      </main>
+      <footer>
+        <h5>Copyright 2022 | Prepared by Vincent Maante</h5>
+      </footer>
+    </div>
+
+    <script src="./public/js/main.js"></script>
+  </body>
+</html>
